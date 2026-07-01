@@ -10,4 +10,9 @@ class DemoApplicationTests {
     void contextLoads() {
     }
 
+    @Test
+    void testDummy() {
+        org.junit.jupiter.api.Assertions.assertTrue(true);
+    }
+
 }
