@@ -15,5 +15,5 @@ class DemoApplicationTests {
         org.junit.jupiter.api.Assertions.assertTrue(true);
     }
 
-    // Trigger workflow run with updated secrets v3
+    // Trigger workflow run with updated secrets v4
 }
