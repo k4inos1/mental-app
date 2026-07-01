@@ -1,4 +1,4 @@
-// src/js/main.js
+// src/main/resources/static/src/js/main.js
 import { initThemeToggle } from './theme.js';
 import { initUIEffects } from './ui.js';
 import { initFAQ } from './faq.js';
