@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Comunidad | AbrazaMente</title>
-  <meta name="description" content="Comunidad de orientación terapéutica, especialistas, filtros por especialidad y comentarios anónimos sobre salud mental.">
+  <title>Terapia | AbrazaMente</title>
+  <meta name="description" content="Terapias y especialistas en salud mental: encuentra acompañamiento profesional, técnicas terapéuticas y espacios de apoyo confidenciales.">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../src/styles/global.css" />
-  <link rel="stylesheet" href="../src/styles/comunidad.css" />
+  <link rel="stylesheet" href="../src/styles/terapia.css" />
 </head>
 <body class="comunidad-page">
   <div id="header-container"></div>
@@ -23,24 +23,24 @@
       <div class="text-column reveal">
         <div class="eyebrow">
           <span class="eyebrow-dot"></span>
-          Comunidad · Terapias · Especialistas
+          Terapia · Especialistas · Bienestar
         </div>
         <h1>
-          Encuentra apoyo,
+          Descubre la terapia
           <br>
-          <span class="gradient-text">sin perder tu privacidad.</span>
+          <span class="gradient-text">que te acompaña mejor.</span>
         </h1>
         <p class="subtitle">
-          Explora tipos de terapia, filtra especialistas por enfoque, especialidad o sexo, y revisa comentarios anónimos de personas que ya iniciaron su proceso.
+          Explora terapias, filtra especialistas por enfoque, especialidad o perfil, y revisa comentarios anónimos de quienes ya iniciaron su proceso.
         </p>
         <div class="actions">
-          <a href="#especialistas" class="btn-primary">Ver especialistas</a>
-          <a href="#orientacion" class="btn-secondary">Orientarme primero</a>
+          <a href="#especialistas" class="btn-primary">Ver terapias</a>
+          <a href="#orientacion" class="btn-secondary">Explorar opciones</a>
         </div>
         <div class="feature-cards comunidad-stats">
-          <div class="feat-card"><span class="feat-num">01</span><span class="feat-text">Orientación terapéutica</span></div>
-          <div class="feat-card"><span class="feat-num">02</span><span class="feat-text">Filtros inteligentes</span></div>
-          <div class="feat-card"><span class="feat-num">03</span><span class="feat-text">Comentarios anónimos</span></div>
+          <div class="feat-card"><span class="feat-num">01</span><span class="feat-text">Sesiones seguras</span></div>
+          <div class="feat-card"><span class="feat-num">02</span><span class="feat-text">Especialistas expertos</span></div>
+          <div class="feat-card"><span class="feat-num">03</span><span class="feat-text">Acompañamiento confidencial</span></div>
         </div>
       </div>
 
@@ -66,17 +66,17 @@
   <section id="orientacion" class="services-section comunidad-section">
     <div class="section-header reveal">
       <div class="eyebrow center">Orientación</div>
-      <h2 class="section-title">¿Qué tipo de terapia podría servirte?</h2>
-      <p class="section-subtitle">Una guía inicial para reconocer enfoques posibles según lo que estás viviendo. La elección final debe hacerse junto a un profesional.</p>
+      <h2 class="section-title">¿Qué terapia puede acompañarte hoy?</h2>
+      <p class="section-subtitle">Una guía práctica para identificar enfoques terapéuticos útiles según lo que estás viviendo.</p>
     </div>
     <div class="bento-grid orientation-grid" id="orientationGrid"></div>
   </section>
 
   <section id="terapias" class="specialists-section comunidad-section comunidad-soft-bg">
     <div class="section-header reveal">
-      <div class="eyebrow center">Nuestra red</div>
-      <h2 class="section-title" id="especialistas">Especialistas y terapias disponibles</h2>
-      <p class="section-subtitle">Filtra por nombre, especialidad, tipo de terapia o sexo del especialista para encontrar el acompañamiento adecuado.</p>
+      <div class="eyebrow center">Red de terapeutas</div>
+      <h2 class="section-title" id="especialistas">Terapias y terapeutas disponibles</h2>
+      <p class="section-subtitle">Filtra por nombre, especialidad, tipo de terapia o perfil para encontrar un acompañamiento profesional adecuado.</p>
     </div>
 
     <div class="filters reveal" id="filters">
@@ -93,7 +93,7 @@
         <select id="filterTerapia"><option value="">Todas</option></select>
       </div>
       <div class="filter-group">
-        <label for="filterSexo">Sexo del especialista</label>
+        <label for="filterSexo">Sexo del terapeuta</label>
         <select id="filterSexo"><option value="">Todos</option></select>
       </div>
       <button id="clearFilters" class="btn-secondary" type="button">Limpiar filtros</button>
@@ -101,7 +101,7 @@
 
     <p class="results-count" id="resultsCount"></p>
     <div class="cards-grid specialists-grid" id="cardsGrid"></div>
-    <p class="no-results" id="noResults" hidden>No se encontraron especialistas con esos filtros.</p>
+    <p class="no-results" id="noResults" hidden>No se encontraron terapeutas con esos filtros.</p>
   </section>
 
   <div class="modal-overlay" id="modalOverlay" hidden>
@@ -117,7 +117,7 @@
       <div class="modal-badges" id="modalBadges"></div>
       <p class="modal-desc" id="modalDescripcion"></p>
       <div class="modal-section">
-        <h4>Enfoque de crecimiento personal</h4>
+        <h4>Enfoque terapéutico</h4>
         <p id="modalEnfoque"></p>
       </div>
       <div class="modal-section">
@@ -130,6 +130,6 @@
   <div id="footer-container"></div>
 
   <script type="module" src="../src/js/main.js"></script>
-  <script src="../src/js/comunidad.js" defer></script>
+  <script src="../src/js/terapia.js" defer></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 /* =========================================================
-   COMUNIDAD.JS
+   TERAPIA.JS
    Lógica de terapias, especialistas, filtros y comentarios
    ========================================================= */
 
@@ -222,7 +222,7 @@ function renderCards(lista) {
   }
 
   noResults.hidden = true;
-  resultsCount.textContent = `${lista.length} especialista(s) encontrado(s)`;
+  resultsCount.textContent = `${lista.length} terapeuta(s) encontrado(s)`;
 
   lista.forEach((esp) => {
     const card = document.createElement("article");
