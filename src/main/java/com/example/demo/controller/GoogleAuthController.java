@@ -17,12 +17,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/auth")
 @CrossOrigin(origins = "*")
-public class AuthController {
+public class GoogleAuthController {
 
     private final GoogleAuthService googleAuthService;
     private final String googleClientId;
 
-    public AuthController(
+    public GoogleAuthController(
             GoogleAuthService googleAuthService,
             @Value("${spring.google.client-id}") String googleClientId
     ) {
