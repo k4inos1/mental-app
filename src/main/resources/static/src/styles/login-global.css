@@ -69,8 +69,6 @@ body{
 
 body{
 
-    position: fixed;
-
     background-image: url("../assets/images/background-login-light.png");
 
     background-size: cover;
