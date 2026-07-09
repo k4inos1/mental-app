@@ -17,12 +17,15 @@
         rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../src/styles/login-global.css">
-    <link rel="stylesheet" href="../src/styles/login.css">
+    <link rel="stylesheet" href="../src/styles/global.css?v=2">
+    <link rel="stylesheet" href="../src/styles/login-global.css?v=2">
+    <link rel="stylesheet" href="../src/styles/login.css?v=2">
 
 </head>
 
 <body>
+
+    <div id="header-container"></div>
 
     <!-- =========================
          LOGIN
@@ -37,13 +40,6 @@
         <section class="hero">
 
             <div class="hero__content">
-                <a href="../public/index.html">
-                <img
-                    src="../src/assets/images/AbrazaMente_Logo.svg"
-                    alt="AbrazaMente"
-                    class="hero__logo">
-                    </a>
-
                 <div class="hero__badge">
 
                     <span class="hero__badge-dot"></span>
@@ -116,23 +112,6 @@
         <section class="login-card">
 
             <header class="login-card__header">
-
-                <button
-                    id="theme-toggle"
-                    class="theme-toggle"
-                    aria-label="Cambiar tema">
-
-                    <span class="theme-toggle__sun">
-                        🌙
-                    </span>
-
-                    <span class="theme-toggle__thumb"></span>
-
-                    <span class="theme-toggle__moon">
-                        ☀
-                    </span>
-
-                </button>
 
                 <div class="login-card__heading">
 
@@ -340,6 +319,7 @@
 
     <script src="https://accounts.google.com/gsi/client" async defer></script>
     <script src="../src/js/login-theme.js" defer></script>
+    <script type="module" src="../src/js/main.js"></script>
 
 </body>
 

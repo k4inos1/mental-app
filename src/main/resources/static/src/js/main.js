@@ -1,6 +1,6 @@
 // src/main/resources/static/src/js/main.js - Entry point for frontend
 import { initThemeToggle } from './theme.js';
-import { initUIEffects } from './ui.js';
+import { initUIEffects, initMobileMenu } from './ui.js';
 import { initFAQ } from './faq.js';
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -27,7 +27,10 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   // Rutas actualizadas a src/components/common/
-  cargarComponente('../src/components/common/header.html', 'header-container', initThemeToggle);
+  cargarComponente('../src/components/common/header.html', 'header-container', () => {
+    initThemeToggle();
+    initMobileMenu();
+  });
   
   cargarComponente('../src/components/common/footer.html', 'footer-container', () => {
     const footer = document.querySelector('.mente-footer.reveal');
