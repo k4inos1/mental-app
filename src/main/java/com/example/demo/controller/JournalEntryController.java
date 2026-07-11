@@ -43,7 +43,7 @@ public class JournalEntryController {
             demoUser.setNombres("Usuario");
             demoUser.setApellidos("Demostración");
             demoUser.setEmail("demo@abrazamente.com");
-            demoUser.setPassword("password");
+            demoUser.setPasswordHash("password");
             return userRepository.save(demoUser);
         });
 

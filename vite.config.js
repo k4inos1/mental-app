@@ -8,5 +8,9 @@ export default defineConfig({
   build: {
     outDir: 'src/main/resources/static',
     emptyOutDir: true, // limpia el contenido previo de static al compilar
+  },
+  test: {
+    environment: 'jsdom',
+    setupFiles: ['./src/test/setup.js'],
   }
 })
